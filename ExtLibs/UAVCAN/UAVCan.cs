@@ -1322,7 +1322,7 @@ namespace UAVCAN
 
         public event FileSendProgressArgs FileSendProgress;
 
-        public ConcurrentDictionary<int, uavcan_protocol_NodeStatus> NodeList = new ConcurrentDictionary<int,uavcan_protocol_NodeStatus>();
+        public Dictionary <int, uavcan_protocol_NodeStatus> NodeList = new Dictionary<int,uavcan_protocol_NodeStatus>();
 
         public delegate void NodeAddedArgs(byte NodeID, uavcan.uavcan_protocol_NodeStatus nodeStatus);
         public event NodeAddedArgs NodeAdded;
